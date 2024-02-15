@@ -1,0 +1,22 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,*::placeholder {
+    font-family: iranyekan, sans-serif;
+}
+
+.container {
+    max-width: 1336px;
+    margin: 0 auto;
+}
+
+.container-lg {
+    max-width: 1920px;
+}
+
+.container-menu {
+    max-width: 1676px;
+}

@@ -1,0 +1,269 @@
+header {
+    width: 100%;
+    background-color: white;
+}
+
+header .banner {
+    width: 100%;
+    height: 60px;
+}
+
+header .banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .menu1 {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    background-color: white;
+    justify-content: start;
+    align-items: center;
+    padding: 0 16px;
+}
+
+header .menu1 .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+header .menu1 .search {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .menu1 .search form {
+    width: 600px;
+    height: 44px;
+}
+
+header .menu1 .search form label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+header .menu1 .search form label svg {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .menu1 .search form label input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-right: 50px;
+    border-radius: 8px;
+    background-color: #F0F0F1;
+}
+
+header .menu1 .links {
+    height: 100%;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header .menu1 .links a:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    text-decoration: none;
+    border: 1px solid rgb(224, 224, 226);
+    color: rgb(12, 12, 12);
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+header .menu1 .links span {
+}
+
+header .menu1 .links a:last-child {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu2 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+    background-color: white;
+}
+
+header .menu2 nav {
+    height: 100%;
+}
+
+header .menu2 nav .list1 {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header .menu2 nav .list1 .item1 {
+    height: 100%;
+    position: relative;
+    z-index: 99999;
+}
+
+header .menu2 nav .list1 .item1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: all 300ms linear;
+    transform-origin: left;
+}
+
+header .menu2 nav .list1 .item1:hover::after {
+    transform: scaleX(1);
+}
+
+header .menu2 nav .list1 .item1 .link1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    padding: 0 12px;
+}
+
+header .menu2 nav .list1 .item1:first-child {
+    position: relative;
+}
+
+header .menu2 nav .list1 .item1:first-child .link1 {
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 0;
+}
+
+header .menu2 nav .list1 .item1:first-child .nav2 {
+    width: 150%;
+    height: calc(90dvh - 40px - 68px - 60px);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    background: white;
+}
+
+header .menu2 nav .list1 .item1:first-child:hover .nav2 {
+    display: block;
+}
+
+header .menu2 nav .list1 .item1:first-child .nav2 .list2 {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    overflow: auto;
+    direction: ltr;
+}
+
+header .menu2 nav .list1 .item1:first-child .nav2 .list2 .item2 {
+    width: 100%;
+    height: 50px;
+    direction: rtl;
+}
+
+header .menu2 nav .list1 .item1:first-child .nav2 .list2 .item2 .link2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-right: 8px;
+    gap: 12px;
+    text-decoration: none;
+    color: rgb(63, 64, 100);
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #efefef;
+
+}
+
+header .menu2 nav .list1 .item1:first-child .nav2 .list2 .item2 .link2:hover {
+    background-color: white;
+    color: red;
+}
+
+header .menu2 nav .list1 .item1:first-child .nav2 .list2 .item2 .nav3 {
+    width: 60vw;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    overflow: auto;
+    direction: ltr;
+    display: none;
+    background: white;
+}
+
+header .menu2 nav .list1 .item1:first-child .nav2 .list2 .item2:first-child .nav3 {
+    display: block;
+}
+
+header .menu2 nav .list1 .item1:first-child .nav2 .list2 .item2:hover .nav3 {
+    display: block;
+}
+
+header .menu2 nav .list1 .item1:first-child .nav2 .list2 .item2 .nav3 .list3 {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    direction: rtl;
+    row-gap: 16px;
+    padding: 16px;
+}
+
+header .menu2 nav .list1 .item1:first-child .nav2 .list2 .item2 .nav3 .list3 .item3 {
+    width: 25%;
+    /*height: fit-content;*/
+}
+
+header .menu2 nav .list1 .item1:first-child .nav2 .list2 .item2 .nav3 .list3 .item3 .link3 {
+    text-decoration: none;
+    color: rgb(129, 133, 139);
+    font-size: 12px;
+}
+
+header .menu2 nav .list1 .item1:first-child .nav2 .list2 .item2 .nav3 .list3 .item3 .link3:hover {
+    color: red;
+}
+
+header .menu2 .open-city {
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: rgb(63, 64, 100);
+    font-size: 12px;
+    gap: 8px;
+}

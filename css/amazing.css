@@ -1,0 +1,46 @@
+.amazing{
+    width: 100%;
+    height: 300px;
+    background: #ef4056;
+    padding: 20px 2px;
+    border-radius: 16px;
+}
+.amazing .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.amazing .swiper-slide {
+    background: #fff;
+}
+.amazing .swiper-slide:first-child{
+    background: transparent;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.amazing .swiper-slide:first-child img:first-child{
+    width: 92px;
+    height: 77px;
+}
+.amazing .swiper-slide:first-child img:nth-child(2){
+    width: 145px;
+    height: 115px;
+}
+.amazing .swiper-slide:first-child a{
+    text-decoration: none;
+    color: white;
+}
+.amazing .swiper-slide:nth-child(2){
+    border-radius: 0 8px 8px 0;
+}
+.amazing .swiper-slide:last-child{
+    border-radius: 8px 0 0 8px;
+}
+.amazing .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
